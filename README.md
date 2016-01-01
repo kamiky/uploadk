@@ -52,13 +52,12 @@ define if the click feature is active or not (will create an hidden input and po
 ### Factories
 
 - **fileReader**
-Syntax : ```fileReader.readAsDataURL(file, scope);```
+```fileReader.readAsDataURL(file, scope);```
 
 - **canvas**
-Syntax : ```canvas.make(dataUrl, height);```
+```canvas.make(dataUrl, height);```
 
 - **fileUploader**
-Syntax : 
 ```
 fileUploader.post(files, [method])
 			.to(url, headers)
