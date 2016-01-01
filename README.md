@@ -11,10 +11,12 @@ AngularJS (1.x) plugin, upload files, make canvas, drag &amp; drop, no need jque
 
 ### FilesCatch Directive attributes
 - **files-catch / on-drop**
-They both act the same way, evaluating your $scope properties.
+They both do the same action, its a matter of choice, evaluate your $scope properties to find the matching callback function
 
 controller :
 ```$scope.dropCallback = function(files) { //do business };```
-
 html :
 ```<div catch-files on-drop="dropCallback"></div>```
+
+- **on-drag-enter / on-drag-leave**
+same syntax
