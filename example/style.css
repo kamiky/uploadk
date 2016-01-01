@@ -1,0 +1,55 @@
+body{
+	margin:0px;
+	padding:0px;
+	font-family: arial;
+	background-color:#F6F6F6;
+}
+
+*{
+	box-sizing:border-box;
+}
+
+.container{
+	margin:auto;
+	padding:10px;
+	max-width:430px;
+}
+
+.dropbox{
+	border: 1px solid #E4E3E3;
+	background-color: #FFF;
+	margin-top: 50px;
+	min-height: 100px;
+	position: relative
+}
+
+.dropfile{
+	text-align: center;
+	font-size: 17px;
+	color: #BDBDBD;
+	cursor: pointer;
+	position: absolute;
+	left:0px;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	padding:25px 0px;
+}
+.preview{
+	margin:4px;
+}
+img {
+	display: inline-block;
+	width: 100px;
+	padding: 2px;
+	height: 100px;
+}
+button {
+	width: 100%;
+	background-color: #6EAEFF;
+	border: medium none;
+	color: #FFF;
+	line-height: 30px;
+	margin-top: 5px;
+	cursor:pointer;
+}
