@@ -30,7 +30,7 @@ angular.module('uploadk')
 				if (self.options.click) {
 					self.initInput();
 					element.on('click', function (e){
-						if (self.ignore || !$scope.$eval(attrs.catchIf)) {
+						if (self.ignore || (typeof attrs.catchIf !== "undefined" && !$scope.$eval(attrs.catchIf))) {
 							self.ignore = true;
 							return ;
 						}
