@@ -15,6 +15,7 @@ They both do the same action, its a matter of choice, evaluate your $scope prope
 
 controller :
 ```$scope.dropCallback = function(files) { //do business };```
+
 html :
 ```<div catch-files on-drop="dropCallback"></div>```
 
