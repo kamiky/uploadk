@@ -1,0 +1,23 @@
+{
+  "name": "uploadk",
+  "version": "1.0.0",
+  "description": "AngularJS (1.x) plugin, upload files, make canvas, drag & drop, no need jquery",
+  "main": "kupload.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "upload",
+    "drag",
+    "drop",
+    "canvas",
+    "jquery free"
+  ],
+  "author": "alexis.baranger91@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-concat": "^0.5.1"
+  }
+}
