@@ -29,6 +29,10 @@ angular.module('uploadk')
 				element.bind('dragleave', self.onLeave);
 				self.initInput();
 				element.on('click', function (e){
+					if (self.ignore || !$scope.$eval(attrs.catchIf)) {
+						self.ignore = true;
+						return ;
+					}
 					document.getElementById('input-file').click();
 				});
 				this._addEvent(element[0], 'drop', self.onDrop);
