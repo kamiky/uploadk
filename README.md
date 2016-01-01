@@ -69,7 +69,7 @@ fileUploader.post(files, [method])
 	});
 ```
 
-example :
+### example :
 ```
 angular.module('myApp').controller('MainController', ['$scope', fileReader', 'canvas', 'fileUploader', function($scope, fileReader, canvas, fileUploader){
 	var droppedFiles = [];
