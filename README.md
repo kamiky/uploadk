@@ -48,3 +48,44 @@ define if the drag & drop feature is active or not
 
 - **click (default:false)**
 define if the click feature is active or not (will create an hidden input and pop a file window on the click event)
+
+### Factories
+
+- **fileReader**
+Syntax : ```fileReader.readAsDataURL(file, scope);```
+
+- **canvas**
+Syntax : ```canvas.make(dataUrl, height);```
+
+- **fileUploader**
+Syntax : 
+```
+fileUploader.post(files, [method])
+			.to(url, headers)
+			.then(function (success){
+
+				}, function (err){
+
+			}, function (notify){
+	});
+```
+
+example :
+```
+angular.module('myApp').controller('MainController', ['$scope', fileReader', 'canvas', 'fileUploader', function($scope, fileReader, canvas, fileUploader){
+	var droppedFiles = [];
+	$scope.images = [];
+	$scope.dropCallback =  function(files) {
+		for (var i = 0; l = files.length, i < l; ++i) {
+                droppedFiles.push(files[i]);
+                fileReader.readAsDataUrl(files[i], $scope).then(function (result)
+                {
+                    canvas.make(result, 400).then(function (src){
+                        var image = {src:src};
+                        $scope.images.unshift(image);
+                    });
+                });
+            }
+	};
+}]);
+```
