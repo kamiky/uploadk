@@ -30,9 +30,11 @@ This attributes will evaluate your expression, if your expression is equivalent 
 the directive will extend its default options to your own, you can override each options properties (see below)
 
 controller:
-```$scope.options = {
+```
+$scope.options = {
   multiple = false;
-};```
+};
+```
 
 html :
 ```<div catch-files="dropCallback catch-options="options"```
