@@ -21,3 +21,7 @@ html :
 
 - **on-drag-enter / on-drag-leave**
 same syntax
+
+- **catch-if**
+This attributes will evaluate your expression, if your expression is equivalent to undefined or false, the directive will be inactive.
+```<div catch-files="dropCallback" catch-if="user"></div>
