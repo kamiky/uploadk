@@ -8,3 +8,7 @@ AngularJS (1.x) plugin, upload files, make canvas, drag &amp; drop, no need jque
 1. Add to your module dependency ```var app = angular.module('myApp', ['uploadk'])```
 2. Markup your DOM element ```<div catch-files on-drop="callback" catch-options="options">```
 3. Inject factories : fileReader, fileUploader and canvas to your controller, then do your business on files catched by the directive
+
+### FilesCatch Directive attributes
+-** files-catch / on-drop**
+They both act the same way, evaluating your $scope properties.
