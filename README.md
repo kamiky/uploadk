@@ -37,4 +37,14 @@ $scope.options = {
 ```
 
 html :
-```<div catch-files="dropCallback catch-options="options"```
+```<div catch-files="dropCallback catch-options="options"></div>```
+
+### FilesCatch options
+- **multiple (default:true)**
+if set to false, the directive will only provide the first file catched to your callback function
+
+- **drag (default:true)**
+define if the drag & drop feature is active or not
+
+- **click (default:false)**
+define if the click feature is active or not (will create an hidden input and pop a file window on the click event)
