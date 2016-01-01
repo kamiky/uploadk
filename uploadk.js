@@ -66,7 +66,7 @@ angular.module('uploadk')
 			}
 			
 			Catcher.prototype.onDrop = function(event){
-				if (self.ignore || !$scope.$eval(attrs.catchIf)) {
+				if (self.ignore || (typeof attrs.catchIf !== "undefined" && !$scope.$eval(attrs.catchIf))) {
 					self.ignore = true;
 					return ;
 				}
