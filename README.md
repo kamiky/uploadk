@@ -70,6 +70,8 @@ fileUploader.post(files, [method])
 ```
 
 ### example :
+
+angular app :
 ```
 var app = angular.module('myApp', ['uploadk'])
 .controller('MainCtrl', ['$scope', '$rootScope', 'fileReader', 'canvas', 'fileUploader',
@@ -113,4 +115,20 @@ var app = angular.module('myApp', ['uploadk'])
             });
 		};
 	}]);
+```
+
+html :
+```
+<div class="dropfile" catch-files on-drop="dropCallback" catch-options="options" catch-if="canUpload">
+	<div>Drag & Drop </br>Or click</div>
+</div>
+<img data-ng-repeat="image in images" src="{{image.src}}"/>
+<div ng-show="images.length > 0">
+	<button type="button" ng-click="upload()">Upload</button>
+</div>
+<div style="margin-top:50px;">
+	<div data-ng-show="prct">process : {{prct}} %</div>
+	<div data-ng-show="success">success : {{success}}</div>
+	<div data-ng-show="error">error : {{error}}</div>
+</div>
 ```
